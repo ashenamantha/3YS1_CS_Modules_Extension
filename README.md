@@ -52,6 +52,7 @@ Follow these steps to install the extension locally on Chrome:
 
 ## Screenshots
 
+<img width="429" height="256" alt="image" src="https://github.com/user-attachments/assets/dd18cb4d-395e-484a-b31a-3ad0a94067bd" />
 <img width="426" height="521" alt="image" src="https://github.com/user-attachments/assets/00607132-54b9-40d3-9a43-e29f3f124eaa" />
 
 
