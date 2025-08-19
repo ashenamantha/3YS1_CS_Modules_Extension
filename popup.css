@@ -1,0 +1,122 @@
+body {
+  margin: 0;
+  background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
+  color: #c3ffd9;
+  font-family: 'JetBrains Mono', 'Fira Mono', 'Segoe UI', Arial, monospace;
+}
+
+.popup-container {
+  min-width: 300px;
+  padding: 24px 18px 10px 18px;
+  background: rgba(16, 22, 32, 0.93);
+  border-radius: 18px;
+  box-shadow: 0 2px 24px 0 #00ffea40, 0 0 0 1px #0ff2;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  position: relative;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 18px;
+  justify-content: center;
+}
+
+.logo {
+  font-size: 2rem;
+  filter: drop-shadow(0 0 8px #39ff14cc);
+}
+
+.title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 1.3px;
+  background: linear-gradient(90deg, #00ffe7 30%, #39ff14 70%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.modules {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-bottom: 16px;
+}
+
+button {
+  background: linear-gradient(90deg, #111c22 60%, #1f4234 100%);
+  color: #00ffe7;
+  border: none;
+  border-radius: 8px;
+  padding: 14px 0;
+  font-size: 1.08em;
+  font-family: inherit;
+  font-weight: 600;
+  letter-spacing: 1px;
+  box-shadow: 0 0 8px #00ffea70, 0 0 2px #39ff1487 inset;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: background 0.18s, box-shadow 0.18s, color 0.18s;
+  outline: 1.5px solid transparent;
+}
+
+button span {
+  position: relative;
+  z-index: 2;
+}
+
+button::before {
+  content: '';
+  position: absolute;
+  left: -40%;
+  top: 0;
+  height: 100%;
+  width: 180%;
+  background: linear-gradient(120deg, #00ffe7 0%, #00ffea22 100%);
+  opacity: 0;
+  filter: blur(8px);
+  transition: opacity 0.2s;
+  z-index: 1;
+}
+
+button:hover, button:focus {
+  background: linear-gradient(90deg, #162a38 40%, #2e5c4b 100%);
+  color: #39ff14;
+  box-shadow: 0 0 18px #39ff14bb, 0 0 8px #00ffe799 inset;
+  outline: 1.5px solid #00ffe7;
+}
+
+button:hover::before, button:focus::before {
+  opacity: 1;
+}
+
+.not-lms {
+  display: none;
+  background: #261b36ee;
+  padding: 18px 10px;
+  border-radius: 8px;
+  color: #ff516c;
+  text-align: center;
+  margin-bottom: 12px;
+  font-weight: 600;
+  font-size: 1.06em;
+  box-shadow: 0 0 8px #ff457080;
+}
+
+footer {
+  margin-top: 10px;
+  text-align: center;
+  color: #6cffc2;
+  font-size: 0.92em;
+  opacity: 0.72;
+}
+
+.byline {
+  letter-spacing: 1px;
+  filter: drop-shadow(0 0 4px #00ffe7cc);
+}

@@ -1,0 +1,19 @@
+
+
+{
+  "manifest_version": 3,
+  "name": "SLIIT LMS Module Quick Access",
+  "version": "1.0",
+  "description": "Quickly access your SLIIT LMS modules in a dark cybersecurity-themed popup.",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "128": "icon128.png"
+    }
+},
+     "permissions": ["tabs"],
+  "host_permissions": [
+    "https://courseweb.sliit.lk/*"
+  ]
+
+}
